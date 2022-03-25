@@ -1,0 +1,20 @@
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+
+.login-button {
+  padding: 0.5rem 1rem;
+  background-color: rgb(213, 196, 238);
+  text-align: center;
+  word-wrap: break-word;
+  white-space: nowrap;
+  border-radius: 5px;
+}
+
+.search {
+    margin:0 3rem;
+    width: 100%;
+}

@@ -1,0 +1,18 @@
+.title {
+  margin: 2rem 0 1rem 0;
+  font-size: 50px;
+}
+
+.subtitle {
+  color: rgb(54, 54, 54);
+  font-size: large;
+}
+
+.CTA {
+    background-color: #FDB1BB;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 2rem 0;
+}
