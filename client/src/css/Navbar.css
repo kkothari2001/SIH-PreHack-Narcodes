@@ -12,6 +12,7 @@
   word-wrap: break-word;
   white-space: nowrap;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .search {
