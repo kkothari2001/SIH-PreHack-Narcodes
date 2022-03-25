@@ -41,3 +41,7 @@
 .CTAA:hover {
   transform: scale(0.95);
 }
+
+.tutor-wrapper {
+  background-color: #ebebeb;
+}

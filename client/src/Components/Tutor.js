@@ -5,7 +5,7 @@ import "../css/Tutor.css";
 
 const Tutor = () => {
   return (
-    <div className="landing-wrapper">
+    <div className="tutor-wrapper">
       <Grid container>
         <Grid item xs={12} sm={12} md={6}>
           <h1 style={{marginTop: '2rem', textAlign: "center"}}>Join as a Tutor</h1>

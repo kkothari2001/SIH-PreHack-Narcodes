@@ -4,9 +4,7 @@ export const getProfile = async (req, res) => {
     try {
         const user = await db.User.findById(req.params.id);
         return res.status(200).json({
-            data: {
-                user
-            }
+            user
         });
     } catch (err) {
         return res.status(500).json({
