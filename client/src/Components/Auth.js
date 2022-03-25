@@ -12,12 +12,12 @@ const Login = ({ setLogin }) => {
     try {
       const response = await axios({
         ...Routes.user.signin(),
-        data: { data: details }
-      })
+        data: { data: details },
+      });
 
       if (response.status === 200) {
-        localStorage.setItem("token", response.data.token)
-        localStorage.setItem("_id", response.data._id)
+        localStorage.setItem("token", response.data.token);
+        localStorage.setItem("_id", response.data._id);
       }
     } catch (err) {
       toast.error("Invalid email or password!");
@@ -28,46 +28,52 @@ const Login = ({ setLogin }) => {
       <h1>Login</h1>
       <br />
       <label>Email</label>
-      <TextField
-        required
-        label="Required"
-        variant="outlined"
-        fullWidth
-        placeholder="yourname@mail.com"
-        type="email"
-        onChange={(e) => setDetails({ ...details, email: e.target.value })}
-      ></TextField>
-      <br />
-      <br />
-      <label>Password</label>
-      <TextField
-        variant="outlined"
-        fullWidth
-        placeholder="enter password"
-        type="password"
-        onChange={(e) => setDetails({ ...details, password: e.target.value })}
-      ></TextField>
-      <i>
-        <p
-          style={{
-            color: "#036179",
-            textAlign: "right",
-            fontSize: "14px",
-          }}
+      <form>
+        <TextField
+          required
+          variant="outlined"
+          fullWidth
+          placeholder="yourname@mail.com"
+          type="email"
+          onChange={(e) => setDetails({ ...details, email: e.target.value })}
+        ></TextField>
+        <br />
+        <br />
+        <label>Password</label>
+        <TextField
+          variant="outlined"
+          fullWidth
+          required
+          placeholder="enter password"
+          type="password"
+          onChange={(e) => setDetails({ ...details, password: e.target.value })}
+        ></TextField>
+        <i>
+          <p
+            style={{
+              color: "#036179",
+              textAlign: "right",
+              fontSize: "14px",
+            }}
+          >
+            Forgot Password?
+          </p>
+        </i>
+        <br />
+        <div
+          type="submit"
+          className="login-button"
+          onClick={() => handleLogin()}
         >
-          Forgot Password?
-        </p>
-      </i>
-      <br />
-      <div className="login-button" onClick={() => handleLogin()}>
-        Login
-      </div>
+          Login
+        </div>
+      </form>
       <br />
       <p
         style={{
           textAlign: "center",
           fontSize: "14px",
-          cursor: "pointer"
+          cursor: "pointer",
         }}
         onClick={() => setLogin(false)}
       >
@@ -84,7 +90,7 @@ const Register = ({ setLogin }) => {
     email: "",
     password: "",
     confpassword: "",
-    expert: false
+    expert: false,
   });
 
   const handleRegister = async () => {
@@ -96,8 +102,8 @@ const Register = ({ setLogin }) => {
       delete details.confpassword;
       await axios({
         ...Routes.user.signup(),
-        data: { data: details }
-      })
+        data: { data: details },
+      });
     } catch (err) {
       toast.error("Error with signing up");
     }
@@ -116,7 +122,9 @@ const Register = ({ setLogin }) => {
             placeholder="First Name"
             fullWidth
             type="text"
-            onChange={(e) => setDetails({ ...details, first_name: e.target.value })}
+            onChange={(e) =>
+              setDetails({ ...details, first_name: e.target.value })
+            }
           ></TextField>
         </Grid>
         <Grid item xs={6} sm={6}>
@@ -125,7 +133,9 @@ const Register = ({ setLogin }) => {
             fullWidth
             placeholder="Last Name"
             type="text"
-            onChange={(e) => setDetails({ ...details, last_name: e.target.value })}
+            onChange={(e) =>
+              setDetails({ ...details, last_name: e.target.value })
+            }
           ></TextField>
         </Grid>
       </Grid>
@@ -166,7 +176,10 @@ const Register = ({ setLogin }) => {
       <br />
       <div style={{ display: "flex" }}>
         <label>Register as an expert</label>
-        <Switch checked={details.expert} onChange={() => setDetails({ ...details, expert: !details.expert })} />
+        <Switch
+          checked={details.expert}
+          onChange={() => setDetails({ ...details, expert: !details.expert })}
+        />
       </div>
 
       <br />
@@ -178,7 +191,7 @@ const Register = ({ setLogin }) => {
         style={{
           textAlign: "center",
           fontSize: "14px",
-          cursor: "pointer"
+          cursor: "pointer",
         }}
         onClick={() => setLogin(true)}
       >
