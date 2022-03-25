@@ -5,13 +5,14 @@ import img1 from "../assets/LandingPage1.PNG";
 import study1 from "../assets/study1.jpg";
 import study2 from "../assets/study2.jpg";
 import study3 from "../assets/study3.jpg";
+import LeaderBoard from "./LeaderBoard";
 
 const Landing = () => {
   return (
     <div className="landing-wrapper">
       <div style={{ maxWidth: "1200px", margin: "auto", padding: "2rem" }}>
         <Grid container>
-          <Grid item xs={12} sm={12} md={6}>
+          <Grid item xs={12} sm={12} md={7}>
             <div
               style={{
                 height: "80%",
@@ -33,7 +34,7 @@ const Landing = () => {
               <div className="CTA">Explore More!</div>
             </div>
           </Grid>
-          <Grid item xs={12} sm={12} md={6}>
+          <Grid item xs={12} sm={12} md={5}>
             <img
               style={{ width: "100%", height: "100%" }}
               src={img1}
@@ -42,6 +43,7 @@ const Landing = () => {
           </Grid>
         </Grid>
       </div>
+      <LeaderBoard />
       <div className="why-choose-us">
         <h1 style={{ textAlign: "center" }}>Why Choose Us?</h1>
         <Grid
