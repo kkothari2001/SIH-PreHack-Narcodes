@@ -5,6 +5,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 import { FormControl } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
 import "../css/Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -26,7 +27,7 @@ const Navbar = () => {
           />
         </FormControl>
       </div>
-      <div className="login-button">Login | Signup</div>
+      <Link to="/auth"><div className="login-button-nav">Login | Signup</div></Link>
     </div>
   );
 };

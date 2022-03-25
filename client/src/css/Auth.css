@@ -1,0 +1,38 @@
+.auth-image {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  background-image: url(login-back.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: #036179;
+  padding: 2rem;
+  padding-top: 4rem;
+}
+
+.auth-image img {
+  width: 100%;
+}
+
+.login {
+  width: 500px;
+  padding: 2rem;
+  margin: 2rem auto;
+}
+
+.login label {
+  color: rgb(104, 103, 103);
+  margin-bottom: 10px;
+}
+
+.login-button {
+  background-color: #036179;
+  padding: 0.5rem 2rem;
+  color: aliceblue;
+  text-align: center;
+  word-wrap: break-word;
+  white-space: nowrap;
+  border-radius: 5px;
+  cursor: pointer;
+}
