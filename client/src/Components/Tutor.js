@@ -8,7 +8,7 @@ const Tutor = () => {
     <div className="landing-wrapper">
       <Grid container>
         <Grid item xs={12} sm={12} md={6}>
-          <div className="hh1">Join as a Tutor</div>
+          <h1 style={{marginTop: '2rem', textAlign: "center"}}>Join as a Tutor</h1>
           <div id="item-6">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
