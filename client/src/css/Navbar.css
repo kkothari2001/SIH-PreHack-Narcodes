@@ -1,0 +1,26 @@
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+
+.logo h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: lighter;
+}
+
+.login-button-nav {
+  padding: 0.5rem 1rem;
+  background-color: rgb(213, 196, 238);
+  text-align: center;
+  word-wrap: break-word;
+  white-space: nowrap;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search {
+    margin:0 3rem;
+    width: 100%;
+}
