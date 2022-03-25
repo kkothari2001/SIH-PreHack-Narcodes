@@ -15,7 +15,11 @@
   border-radius: 5px;
   width: fit-content;
   margin: 2rem 0;
+  transition: .2s ease-in-out 0s;
 }
+.CTA:hover{
+  transform: scale(0.95);
+  }
 
 .why-choose-us {
   padding: 2rem;
@@ -54,4 +58,9 @@
   width: 200px;
   margin: auto;
   cursor: pointer;
+  transition: .2s ease-in-out 0s;
+}
+
+.join-us:hover {
+  transform: scale(0.95);
 }

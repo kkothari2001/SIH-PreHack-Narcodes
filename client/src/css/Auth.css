@@ -35,4 +35,9 @@
   white-space: nowrap;
   border-radius: 5px;
   cursor: pointer;
+  transition: .2s ease-in-out 0s;
+}
+
+.login-button:hover {
+  transform: scale(0.95);
 }

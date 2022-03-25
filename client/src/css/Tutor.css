@@ -35,6 +35,11 @@
   width: fit-content;
   margin: auto;
   margin-top: 2rem;
+  transition: .2s ease-in-out 0s;
+}
+
+.CTAA:hover {
+  transform: scale(0.95);
 }
 
 .tutor-wrapper {
