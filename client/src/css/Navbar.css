@@ -5,6 +5,11 @@
   padding: 2rem 3rem;
 }
 
+.logo h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: lighter;
+}
+
 .login-button-nav {
   padding: 0.5rem 1rem;
   background-color: rgb(213, 196, 238);

@@ -1,47 +1,52 @@
 import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import "bootstrap-css-only/css/bootstrap.min.css";
-import "mdbreact/dist/css/mdb.css";
-const FooterPage = () => {
+import { Grid, Link } from "@mui/material";
+import "../css/FooterPage.css"
+
+const Footer = () => {
   return (
-    <MDBFooter color="blue" className="font-small pt-4 mt-4">
-      <MDBContainer fluid className="text-center text-md-left">
-        <MDBRow>
-          <MDBCol md="6">
-            <h5 className="title">Footer Content</h5>
-            <p>
-              Here you can use rows and columns here to organize your footer
-              content.
-            </p>
-          </MDBCol>
-          <MDBCol md="6">
-            <h5 className="title">Links</h5>
-            <ul>
-              <li className="list-unstyled">
-                <a href="#!">Link 1</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">Link 2</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">Link 3</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">Link 4</a>
-              </li>
-            </ul>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
-      <div className="footer-copyright text-center py-3">
-        <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright:{" "}
-          <a href="https://www.mdbootstrap.com"> Narcodes </a>
-        </MDBContainer>
+    <div className="footer">
+      <div style={{ maxWidth: "1300px", margin: "auto" }}>
+        <Grid container spacing={5}>
+          <Grid item xs={12} sm={12} md={4}>
+            <div className="footer-prati">
+              <h3>TUMBLE</h3>
+              <br />
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <div className="quick-links">
+              <h3>Quick Links</h3>
+              <br />
+              <Link href="" underline="none" color="inherit">
+                <p>Link</p>
+              </Link>
+              <Link href="" underline="none" color="inherit">
+                <p>Link</p>
+              </Link>
+              <Link href="" underline="none" color="inherit">
+                <p>Link</p>
+              </Link>
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <div className="quick-links">
+              <h3>Quick Links</h3>
+              <br />
+              <Link href="" underline="none" color="inherit">
+                <p>Link</p>
+              </Link>
+              <Link href="" underline="none" color="inherit">
+                <p>Link</p>
+              </Link>
+              <Link href="" underline="none" color="inherit">
+                <p>Link</p>
+              </Link>
+            </div>
+          </Grid>
+        </Grid>
       </div>
-    </MDBFooter>
+    </div>
   );
 };
 
-export default FooterPage;
+export default Footer;
