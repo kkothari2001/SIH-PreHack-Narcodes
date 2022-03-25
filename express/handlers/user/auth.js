@@ -26,10 +26,8 @@ export const signin = async (req, res) => {
         if (user.comparePassword(password)) {
             const token = generateAccessToken(user.toJSON());
             return res.status(200).json({
-                data: {
-                    _id: user._id,
-                    token
-                }
+                _id: user._id,
+                token
             });
         }
         else {
