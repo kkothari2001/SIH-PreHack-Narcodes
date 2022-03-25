@@ -16,8 +16,6 @@ const Login = ({ setLogin }) => {
       <br />
       <label>Email</label>
       <TextField
-        required
-        label="Required"
         variant="outlined"
         fullWidth
         placeholder="yourname@mail.com"
