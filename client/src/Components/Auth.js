@@ -1,4 +1,4 @@
-import { Grid, TextField } from "@mui/material";
+import { Grid, TextField, Switch } from "@mui/material";
 import React, { useState } from "react";
 import "../css/Auth.css";
 import { ToastContainer, toast } from "react-toastify";
@@ -16,6 +16,8 @@ const Login = ({ setLogin }) => {
       <br />
       <label>Email</label>
       <TextField
+        required
+        label="Required"
         variant="outlined"
         fullWidth
         placeholder="yourname@mail.com"
@@ -52,6 +54,7 @@ const Login = ({ setLogin }) => {
         style={{
           textAlign: "center",
           fontSize: "14px",
+          cursor: "pointer"
         }}
         onClick={() => setLogin(false)}
       >
@@ -63,11 +66,12 @@ const Login = ({ setLogin }) => {
 
 const Register = ({ setLogin }) => {
   const [details, setDetails] = useState({
-    fname: "",
-    lname: "",
+    first_name: "",
+    last_name: "",
     email: "",
     password: "",
     confpassword: "",
+    expert: false
   });
 
   const handleRegister = () => {
@@ -90,7 +94,7 @@ const Register = ({ setLogin }) => {
             placeholder="First Name"
             fullWidth
             type="text"
-            onChange={(e) => setDetails({ ...details, fname: e.target.value })}
+            onChange={(e) => setDetails({ ...details, first_name: e.target.value })}
           ></TextField>
         </Grid>
         <Grid item xs={6} sm={6}>
@@ -99,7 +103,7 @@ const Register = ({ setLogin }) => {
             fullWidth
             placeholder="Last Name"
             type="text"
-            onChange={(e) => setDetails({ ...details, lname: e.target.value })}
+            onChange={(e) => setDetails({ ...details, last_name: e.target.value })}
           ></TextField>
         </Grid>
       </Grid>
@@ -138,6 +142,12 @@ const Register = ({ setLogin }) => {
       ></TextField>
       <br />
       <br />
+      <div style={{ display: "flex" }}>
+        <label>Register as an expert</label>
+        <Switch checked={details.expert} onChange={() => setDetails({ ...details, expert: !details.expert })} />
+      </div>
+
+      <br />
       <div className="login-button" onClick={() => handleRegister()}>
         Register
       </div>
@@ -146,6 +156,7 @@ const Register = ({ setLogin }) => {
         style={{
           textAlign: "center",
           fontSize: "14px",
+          cursor: "pointer"
         }}
         onClick={() => setLogin(true)}
       >
