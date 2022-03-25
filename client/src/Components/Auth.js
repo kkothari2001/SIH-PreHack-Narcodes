@@ -3,12 +3,25 @@ import React, { useState } from "react";
 import "../css/Auth.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios, { Routes } from "../services/index.js";
 
 const Login = ({ setLogin }) => {
   const [details, setDetails] = useState({ email: "", password: "" });
 
-  const handleLogin = () => {
-    console.log(details);
+  const handleLogin = async () => {
+    try {
+      const response = await axios({
+        ...Routes.user.signin(),
+        data: { data: details },
+      });
+
+      if (response.status === 200) {
+        localStorage.setItem("token", response.data.token);
+        localStorage.setItem("_id", response.data._id);
+      }
+    } catch (err) {
+      toast.error("Invalid email or password!");
+    }
   };
   return (
     <div className="login">
@@ -80,11 +93,20 @@ const Register = ({ setLogin }) => {
     expert: false,
   });
 
-  const handleRegister = () => {
-    if (details.password !== details.confpassword) {
-      toast.error("Passwords don't match");
+  const handleRegister = async () => {
+    try {
+      if (details.password !== details.confpassword) {
+        toast.error("Passwords don't match");
+        return;
+      }
+      delete details.confpassword;
+      await axios({
+        ...Routes.user.signup(),
+        data: { data: details },
+      });
+    } catch (err) {
+      toast.error("Error with signing up");
     }
-    console.log(details);
   };
 
   return (
@@ -152,7 +174,7 @@ const Register = ({ setLogin }) => {
       ></TextField>
       <br />
       <br />
-      <div style={{ display: "flex", alignItems: "center" }}>
+      <div style={{ display: "flex" }}>
         <label>Register as an expert</label>
         <Switch
           checked={details.expert}
