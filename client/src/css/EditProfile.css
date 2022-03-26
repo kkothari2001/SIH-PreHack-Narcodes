@@ -1,0 +1,39 @@
+.ep-header {
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: -20px;
+}
+
+  
+.ep-form {
+    width: 1500px;
+    padding: 2rem;
+    margin: 2rem;
+  }
+  
+  .ep-form label {
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .ep-form-button {
+    background-color: #036179;
+    padding: 0.5rem 2rem;
+    color: aliceblue;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: nowrap;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s ease-in-out 0s;
+    align-items: 'center';
+    width: 500;
+  }
+  
+  .ep-form-button:hover {
+    transform: scale(0.95);
+  }

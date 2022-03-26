@@ -8,6 +8,7 @@ import study3 from "../assets/study3.jpg";
 import prof1 from "../assets/prof1.jpg";
 import prof2 from "../assets/prof2.jpg";
 import LeaderBoard from "./LeaderBoard";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -33,7 +34,9 @@ const Landing = () => {
                   </p>
                 </i>
               </div>
-              <div className="CTA">Explore More!</div>
+              <Link to="/">
+                <div className="CTA">Explore More!</div>
+              </Link>
             </div>
           </Grid>
           <Grid item xs={12} sm={12} md={5}>
