@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="footer">
       <div style={{ maxWidth: "1300px", margin: "auto" }}>
         <div className="footer-prati">
-          <h3>TUMBLE</h3>
+          <h3>VidyaConnect</h3>
         </div>
       </div>
     </div>

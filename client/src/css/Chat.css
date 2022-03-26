@@ -1,0 +1,78 @@
+.main {
+  background-color: #1a1a1d;
+  height: 45rem;
+  padding-top: 4rem;
+  padding-left: 15rem;
+  padding-right: 32rem;
+  width: 100%;
+  /* border-radius: 1rem; */
+}
+
+.b1 {
+  background-color: #2979ff;
+  margin-top: 10%;
+  border-radius: 1rem;
+  padding-top: 6.5rem;
+  margin-bottom: -1rem;
+}
+.bb1 {
+  padding-left: auto;
+}
+.mid {
+  background-color: white;
+  padding: 10rem;
+  border-radius: 1rem;
+}
+
+.CTA2 {
+  background-color: #2979ff;
+  padding: 1.1rem 3.4rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 80%;
+  margin-top: -7.5%;
+  transition: 0.2s ease-in-out 0s;
+}
+.ct1 {
+  background-color: #f3f3f3;
+  padding: 1.5rem 5rem;
+  margin-top: -30%;
+  border-radius: 1rem;
+  margin-left: 46%;
+  margin-right: -21%;
+}
+.ct2 {
+  background-color: #f3f3f3;
+  padding: 1.5rem 4rem;
+  margin-top: 3%;
+  border-radius: 1rem;
+  margin-left: -29%;
+  margin-right: 50%;
+}
+.textt {
+  background-color: white;
+  padding: 0rem;
+  border-radius: 1rem;
+  margin-top: 4rem;
+  /* padding-top: 2rem; */
+  border-color: #1a1a1d;
+}
+.userinp {
+  width: 80%;
+  padding-top: 15rem;
+}
+.user1 {
+  margin-right: 0%;
+  margin-top: -7.5%;
+}
+.line {
+  color: #fff;
+  height: 40%;
+  margin-top: -81.9%;
+  margin-left: 119%;
+  padding: -3rem 22rem;
+  padding: 0px 0px;
+  font-size: 3.5rem;
+  font-style: bo;
+  font-size: 3.5rem;
+}

@@ -5,6 +5,8 @@ import img1 from "../assets/LandingPage1.PNG";
 import study1 from "../assets/study1.jpg";
 import study2 from "../assets/study2.jpg";
 import study3 from "../assets/study3.jpg";
+import prof1 from "../assets/prof1.jpg";
+import prof2 from "../assets/prof2.jpg";
 import LeaderBoard from "./LeaderBoard";
 import { Link } from "react-router-dom";
 
@@ -24,11 +26,11 @@ const Landing = () => {
             >
               <div>
                 <h1 className="title">
-                  Tumble, <br /> Lorem Ipsum
+                  VidyaConnect, <br /> Learning Platform
                 </h1>
                 <i>
                   <p className="subtitle">
-                    Lorem ipsum dolor sit amet consectetur.
+                    Online Educational Platform to empower the Society.
                   </p>
                 </i>
               </div>
@@ -54,9 +56,8 @@ const Landing = () => {
             <div>
               <img src={study1} alt=""></img>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                mollitia, molestiae quas vel sint commodi repudiandae
-                consequuntur voluptatum laborum
+                "Because we’re easy to work with. We take the work seriously,
+                but not ourselves. We’re not prickly, precious or pretentious"
               </p>
             </div>
           </Grid>
@@ -64,9 +65,9 @@ const Landing = () => {
             <div>
               <img src={study2} alt=""></img>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                mollitia, molestiae quas vel sint commodi repudiandae
-                consequuntur voluptatum laborum
+                "Because we focus on results. For us, it’s all about what adds
+                value for you and your business. Above all, we want our words to
+                work for you."
               </p>
             </div>
           </Grid>
@@ -74,9 +75,9 @@ const Landing = () => {
             <div>
               <img src={study3} alt=""></img>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                mollitia, molestiae quas vel sint commodi repudiandae
-                consequuntur voluptatum laborum
+                "Because we’ll understand your needs. Before we even start
+                writing, we think about your tone of voice and value
+                proposition, so every word builds your brand."
               </p>
             </div>
           </Grid>
