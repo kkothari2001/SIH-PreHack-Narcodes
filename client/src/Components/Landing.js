@@ -6,6 +6,7 @@ import study1 from "../assets/study1.jpg";
 import study2 from "../assets/study2.jpg";
 import study3 from "../assets/study3.jpg";
 import LeaderBoard from "./LeaderBoard";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -31,7 +32,9 @@ const Landing = () => {
                   </p>
                 </i>
               </div>
-              <div className="CTA">Explore More!</div>
+              <Link to="/">
+                <div className="CTA">Explore More!</div>
+              </Link>
             </div>
           </Grid>
           <Grid item xs={12} sm={12} md={5}>
@@ -46,12 +49,7 @@ const Landing = () => {
       <LeaderBoard />
       <div className="why-choose-us">
         <h1 style={{ textAlign: "center" }}>Why Choose Us?</h1>
-        <Grid
-          container
-          justifyContent="center"
-          alignItems="center"
-          p={3}
-        >
+        <Grid container justifyContent="center" alignItems="center" p={3}>
           <Grid item xs={12} sm={6} md={4}>
             <div>
               <img src={study1} alt=""></img>
@@ -83,9 +81,7 @@ const Landing = () => {
             </div>
           </Grid>
         </Grid>
-        <div className="join-us">
-            Join Us!
-        </div>
+        <div className="join-us">Join Us!</div>
       </div>
     </div>
   );

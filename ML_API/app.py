@@ -21,7 +21,13 @@ def rake_extractor():
     r.extract_keywords_from_text(text)
     return_dict= {}
     return_dict['keywords'] = r.get_ranked_phrases()[:5]
-    return return_dict
+    kl = []
+    keywords = {}
+    for word in return_dict['keywords']:
+        for keyword in word.split(' '):
+            kl.append(keyword)
+    keywords['keywords'] = kl
+    return keywords   
 
 
 # main driver function

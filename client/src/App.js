@@ -7,6 +7,7 @@ import Profile from "./Components/Profile";
 import Chat from "./Components/Chat";
 import Tutor from "./Components/Tutor";
 import FooterPage from "./Components/FooterPage";
+import EditProfile from "./Components/EditProfile";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/Chat" element={<Chat />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/auth" element={<Auth />} />
+        <Route path="/edit_profile" element={<EditProfile />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </Router>
