@@ -8,7 +8,7 @@ import axios, { Routes } from "../services/index.js";
 
 const EditProfile = () => {
   return (
-    <div>
+    <div >
       <div className="ep-header">Profile & Settings</div>
       <div>
         <form>
