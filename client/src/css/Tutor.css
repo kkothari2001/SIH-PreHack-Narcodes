@@ -35,7 +35,7 @@
   width: fit-content;
   margin: auto;
   margin-top: 2rem;
-  transition: .2s ease-in-out 0s;
+  transition: 0.2s ease-in-out 0s;
 }
 
 .CTAA:hover {
@@ -44,4 +44,28 @@
 
 .tutor-wrapper {
   background-color: #ebebeb;
+}
+.t1 {
+  width: 254px;
+  height: 300px;
+}
+.t2 {
+  width: 254px;
+  height: 300px;
+}
+.t3 {
+  width: 254px;
+  height: 300px;
+}
+.t4 {
+  width: 254px;
+  height: 300px;
+}
+.t5 {
+  width: 254px;
+  height: 300px;
+}
+.t6 {
+  width: 254px;
+  height: 300px;
 }

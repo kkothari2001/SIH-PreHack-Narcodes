@@ -9,8 +9,8 @@ const Chat = () => {
         <div className="b1"></div>
         <div className="mid">
           <div>
-            <div className="ct1">Hi Jatin! How are you?</div>
-            <div className="ct2">I am fine :)</div>
+            <div className="ct1">Sir, I have doubt in Maths</div>
+            <div className="ct2">Okay, So what is the question?</div>
           </div>
         </div>
         <div className="textt">

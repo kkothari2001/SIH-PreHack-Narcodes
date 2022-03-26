@@ -3,12 +3,12 @@ import React from "react";
 import CountUp from "react-countup";
 import "../css/leaderboard.css";
 import { Rating } from "@mui/material";
-import prof from "../assets/prof.jpg"
+import prof2 from "../assets/prof2.jpg";
 
 const Card = () => {
   return (
     <div className="tutor-card">
-      <img src={prof} alt=""></img>
+      <img src={prof2} alt=""></img>
       <b>
         <p>John Hopkins</p>
       </b>
