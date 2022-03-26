@@ -19,8 +19,7 @@
 - **Description:** Ability to identify experts across sectors within a particular geographical area/across geographies Verification of expert to be a trusted expert Incentivization for experts to get a platform Experts can also share content via DIKSHA’s Viduadaan platform OoSC children can also gain access to tutors/experts
 
 ## Links
-* GitHub Repo link: [Link to repository](https://github.com/your-repo-link)
-* Live Project Link(optional): [Website link here](www.google.com)
+* GitHub Repo link: [Link to repository](https://github.com/kkothari2001/SIH-PreHack-Narcodes)
 
 ## Technology stack
 
