@@ -63,5 +63,7 @@ In future, we could speed up the matchmaking process between student and expert.
 
 ## Screenshots
 
+![image](https://user-images.githubusercontent.com/66636289/160222976-e6f63cfb-98f1-4760-bdee-55acc6c1a897.png)
+![image](https://user-images.githubusercontent.com/66636289/160223028-fb43ffff-6440-4805-996d-550b5f538e28.png)
+![image](https://user-images.githubusercontent.com/66636289/160223020-881774d0-e34c-4e73-8c65-f10ad11eccae.png)
 
-![Screenshot alt text](https://img.freepik.com/free-photo/blue-purple-technology-circuit_73426-205.jpg "Here is a screenshot")
